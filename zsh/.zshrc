@@ -20,6 +20,8 @@ setopt hist_ignore_dups
 setopt hist_verify
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -42,3 +44,4 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+alias lg='lazygit'
