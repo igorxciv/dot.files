@@ -45,3 +45,4 @@ function y() {
 	rm -f -- "$tmp"
 }
 alias lg='lazygit'
+alias c='open -a $1 \"Visual Studio Code\"'
